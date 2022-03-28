@@ -1,0 +1,14 @@
+def bubble(arr):
+    n = len(arr)
+        
+    for i in range(n):
+        for k in range(0, n - i - 1):
+            if arr[k] > arr[k + 1]: 
+                arr[k], arr[k + 1] = arr[k + 1], arr[k]
+                
+                
+arr = list(map(int,input("무작위 숫자들을 입력하시오.\n:").split(" ")))  
+
+bubble(arr)
+
+print(arr)
