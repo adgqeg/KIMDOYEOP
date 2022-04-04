@@ -1,0 +1,17 @@
+a = [1,5,2,6,3,7,4]
+print(a)
+
+b = [0,0,0]
+for s in range(3):
+    b[s] = list(map(int, input("i, j, k번째 수를 입력 : ").split()))
+    
+print(b)
+
+
+def solution():
+    for x in range(3):
+        c = a[(b[x][0])-1 : b[x][1]]
+        c.sort()
+        print(c[b[x][2]-1],end=' ')
+        
+solution()
